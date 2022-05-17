@@ -8,10 +8,14 @@ class ReadConfig:
     def get_app_url():
         return config.get('common info', 'url')
 
-    @staticmethod
-    def valid_username():
+    @staticmethod    
+    def get_valid_username():  
         return config.get('common info', 'valid_username')
 
     @staticmethod
-    def valid_password():
+    def get_valid_password():
         return config.get('common info', 'valid_password')
+
+    @staticmethod
+    def get_products_displayed():
+        return config.get('common info', 'products_displayed')

@@ -18,6 +18,8 @@ def setup(request):
     driver.get(url)
     logger.info(f'Navigating to {url}')
 
+
+
     # the following code runs after each test
     def teardown():
         image_name = fr".\screenshots\image-{datetime.today().strftime('%m%d%y-%H%M%S')}.png"
