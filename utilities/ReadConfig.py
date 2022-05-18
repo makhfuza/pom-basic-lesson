@@ -17,5 +17,17 @@ class ReadConfig:
         return config.get('common info', 'valid_password')
 
     @staticmethod
-    def get_products_displayed():
-        return config.get('common info', 'products_displayed')
+    def get_first_name():
+        return config.get('common info', 'firstname')
+
+    @staticmethod
+    def get_last_name():
+        return config.get('common info', 'lastname')
+
+    @staticmethod
+    def get_zip_code():
+        return config.get('common info', 'zipcode')
+
+    
+
+    

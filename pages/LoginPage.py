@@ -1,8 +1,11 @@
 from selenium.webdriver.common.by import By
+from utilities.ReadConfig import ReadConfig
 
 class LoginPage:
        
     # class attributes
+    valid_username = ReadConfig.get_valid_username()
+    valid_password = ReadConfig.get_valid_password()
     textbox_username_id = 'user-name'
     textbox_password_id = 'password'
     button_login_id = 'login-button'
@@ -21,3 +24,7 @@ class LoginPage:
     def click_login(self):
        self.driver.find_element(By.ID, self.button_login_id).click()  
 
+    def valid_login(self):
+        self.set_username(self.valid_username)
+        self.set_password(self.valid_password)
+        self.click_login()

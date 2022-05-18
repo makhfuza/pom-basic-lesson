@@ -1,5 +1,4 @@
 from pages.LoginPage import LoginPage
-from pages.ProductListPage import ProductListPage
 from utilities.ReadConfig import ReadConfig
 from utilities.Logger import Logger
 
@@ -28,7 +27,6 @@ class TestLogin:
         self.login_page.set_username(self.valid_username)
         self.login_page.set_password(self.valid_password)
         self.login_page.click_login()
-        return ProductListPage(self.driver)
         self.logger.info(f'*******Test Case: Validating Login Process')
         if 'products' in self.driver.page_source.lower():
             assert True

@@ -243,7 +243,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 15-May-2022 at 03:06:13 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 18-May-2022 at 05:51:19 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -259,8 +259,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.10.4</td></tr></table>
     <h2>Summary</h2>
-    <p>0 tests ran in 0.34 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">1 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>9 tests ran in 137.09 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">9 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -271,12 +271,102 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="error results-table-row">
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Error</td>
-          <td class="col-name">tests/test_login.py::collect</td>
-          <td class="col-duration"></td>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_cart.py::TestCart::test_cart_page_sign_in</td>
+          <td class="col-duration">16.46</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">tests\test_login.py:6: in &lt;module&gt;<br/>    class TestLogin:<br/>tests\test_login.py:9: in TestLogin<br/>    valid_username = ReadConfig.get.valid_username()<br/><span class="error">E   AttributeError: type object &#x27;ReadConfig&#x27; has no attribute &#x27;get&#x27;</span><br/></div></td></tr></tbody></table></body></html>
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     root:conftest.py:16 Opening firefox browser
+INFO     root:conftest.py:19 Navigating to https://www.saucedemo.com/<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_cart.py:24 *******Test Case: Cart Sign in Page<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     root:conftest.py:27 Taking a screenshot .\screenshots\image-051822-054914.png
+INFO     root:conftest.py:28 Closing the browser<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_checkout.py::TestCheckout::test_shopping_cart</td>
+          <td class="col-duration">16.12</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     root:conftest.py:16 Opening firefox browser
+INFO     root:conftest.py:19 Navigating to https://www.saucedemo.com/<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_checkout.py:16 *******Test Case: Select Inventory List<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     root:conftest.py:27 Taking a screenshot .\screenshots\image-051822-054931.png
+INFO     root:conftest.py:28 Closing the browser<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_checkout.py::TestCheckout::test_checkout_item</td>
+          <td class="col-duration">14.78</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     root:conftest.py:16 Opening firefox browser
+INFO     root:conftest.py:19 Navigating to https://www.saucedemo.com/<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_checkout.py:30 *******Test Case: Select Menu List<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     root:conftest.py:27 Taking a screenshot .\screenshots\image-051822-054946.png
+INFO     root:conftest.py:28 Closing the browser<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_login.py::TestLogin::test_login_page_title</td>
+          <td class="col-duration">14.11</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     root:conftest.py:16 Opening firefox browser
+INFO     root:conftest.py:19 Navigating to https://www.saucedemo.com/<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_login.py:18 *******Test Case: Validating Login Page Title<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     root:conftest.py:27 Taking a screenshot .\screenshots\image-051822-055001.png
+INFO     root:conftest.py:28 Closing the browser<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_login.py::TestLogin::test_login</td>
+          <td class="col-duration">14.86</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     root:conftest.py:16 Opening firefox browser
+INFO     root:conftest.py:19 Navigating to https://www.saucedemo.com/<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_login.py:30 *******Test Case: Validating Login Process<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     root:conftest.py:27 Taking a screenshot .\screenshots\image-051822-055015.png
+INFO     root:conftest.py:28 Closing the browser<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_prod_list.py::TestProdList::test_select_inventory_list</td>
+          <td class="col-duration">15.37</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     root:conftest.py:16 Opening firefox browser
+INFO     root:conftest.py:19 Navigating to https://www.saucedemo.com/<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_prod_list.py:15 *******Test Case: Select Inventory List<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     root:conftest.py:27 Taking a screenshot .\screenshots\image-051822-055030.png
+INFO     root:conftest.py:28 Closing the browser<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_prod_list.py::TestProdList::test_select_menu_list</td>
+          <td class="col-duration">15.46</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     root:conftest.py:16 Opening firefox browser
+INFO     root:conftest.py:19 Navigating to https://www.saucedemo.com/<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_prod_list.py:29 *******Test Case: Select Menu List<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     root:conftest.py:27 Taking a screenshot .\screenshots\image-051822-055045.png
+INFO     root:conftest.py:28 Closing the browser<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_product_dets.py::TestProductDetail::test_product_details</td>
+          <td class="col-duration">14.78</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     root:conftest.py:16 Opening firefox browser
+INFO     root:conftest.py:19 Navigating to https://www.saucedemo.com/<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_product_dets.py:17 *******Test Case: Product Details<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     root:conftest.py:27 Taking a screenshot .\screenshots\image-051822-055100.png
+INFO     root:conftest.py:28 Closing the browser<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_product_dets.py::TestProductDetail::test_add_item_to_cart</td>
+          <td class="col-duration">14.91</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     root:conftest.py:16 Opening firefox browser
+INFO     root:conftest.py:19 Navigating to https://www.saucedemo.com/<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_product_dets.py:29 *******Test Case: Add Item to Cart<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     root:conftest.py:27 Taking a screenshot .\screenshots\image-051822-055115.png
+INFO     root:conftest.py:28 Closing the browser<br/></div></td></tr></tbody></table></body></html>
